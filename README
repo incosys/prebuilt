@@ -1,0 +1,17 @@
+How to flash images into the SAMA5D4 board.
+
+The Linux4SAM (http://www.at91.com/linux4sam/bin/view/Linux4SAM/)
+provides more information on flashing a binary file to the SAMA5D4
+board. 
+
+Here is brief information based on a Linux machine. Assume that
+SAM-BA is already installed in Linux machine.
+Refer to http://www.atmel.com/tools/ATMELSAM-BAIN-SYSTEMPROGRAMMER.aspx
+
+Set the PATH environmental variable to include the directory of sam-ba
+executable.
+
+ - make sure /dev/ttyACMx is generated of not when teh board went to romboot.
+ - if ttyACMx is different from /dev/ttyACM0, then edit the demo_linux_nandflash.sh.
+ - execute ./demo_linux_nandflash.sh.
+ - check if =Done= is written from logfile.log or your serial program for example, minicom or putty.
